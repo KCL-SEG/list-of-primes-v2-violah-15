@@ -3,11 +3,8 @@
 
 def primes(number_of_primes):
     list = []
-    try:
-        if(number_of_primes <= 0):
-            raise ValueError("Number of primes can not 0 or negative")
-    except ValueError:
-            raise ValueError
+    if(number_of_primes <= 0):
+        raise ValueError
     current_value = 2
     while len(list) < number_of_primes:
         for i in range(2, current_value+1):
